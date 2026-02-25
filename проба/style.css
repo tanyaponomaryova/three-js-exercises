@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shape {
+  transition: all 1s ease;
+}
+
+.rectangle {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.big {
+  width: 200px;
+  height: 200px;
+}
+
+.pink {
+  background-color: palevioletred;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: large;
+  box-shadow: 0px 0px 5px 5px rgba(120, 115, 255, 0.2);
+  background-color: rgb(255, 255, 255);
+  color: rgb(120, 115, 255);
+}
+
+/* смайлики */
+#demo {
+  transform: rotate(90deg);
+  font-size: 50px;
+}
+
+#cont-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* кружочки */
+.point {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+
+.transparent {
+  background-color: rgba(129, 255, 32, 1);
+  transition: all 0.1s ease;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 3 колонки */
+  grid-template-rows: repeat(4, 1fr); /* 2 строки по 150px */
+  gap: 5px; /* Расстояние между элементами */
+}

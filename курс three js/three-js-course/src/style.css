@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  background-image: url(https://oboitd.ru/images/goods/big/20200123093425_Oblaka_7-026.jpg);
+}
+
+.webgl {
+  outline: none;
+
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
