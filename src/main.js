@@ -1,18 +1,11 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import modelUrl from "./assets/Character.gltf?url";
-import textureUrl from "./assets/texture.png?url";
-import binUrl from "./assets/Character.bin?url";
-
-console.log(modelUrl);
-console.log(textureUrl);
-console.log(binUrl);
 
 // Загрузка модельки
 console.log(GLTFLoader);
 const gltfLoader = new GLTFLoader();
-gltfLoader.load(modelUrl, (gltf) => {
+gltfLoader.load("models/Character.gltf", (gltf) => {
   console.log("success");
   console.log(gltf);
   gltf.scene.scale.set(0.25, 0.25, 0.25);

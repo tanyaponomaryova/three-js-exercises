@@ -6,7 +6,7 @@ export default defineConfig({
   // 1. Базовый URL (важно для GitHub Pages)
   // Если сайт будет в корне: base: '/'
   // Если в подпапке репозитория: base: '/имя-репозитория/'
-  base: "./", // относительные пути - safest option
+  base: "/three-js-exercises/", // относительные пути - safest option
 
   // 2. НАСТРОЙКА МНОГОСТРАНИЧНОСТИ - указываем все HTML файлы
   build: {
