@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 // Загрузка модельки
 console.log(GLTFLoader);
 const gltfLoader = new GLTFLoader();
-gltfLoader.load("/models/Character.gltf", (gltf) => {
+gltfLoader.load("/models/Character.gltf?url", (gltf) => {
   console.log("success");
   console.log(gltf);
   gltf.scene.scale.set(0.25, 0.25, 0.25);
