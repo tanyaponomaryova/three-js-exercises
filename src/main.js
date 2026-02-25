@@ -2,6 +2,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import modelUrl from "./assets/models/Character.gltf?url";
+import texture from "./assets/models/Текстура.png?url";
+
 // Загрузка модельки
 console.log(GLTFLoader);
 const gltfLoader = new GLTFLoader();
