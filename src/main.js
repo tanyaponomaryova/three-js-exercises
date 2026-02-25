@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 // Загрузка модельки
 console.log(GLTFLoader);
 const gltfLoader = new GLTFLoader();
-gltfLoader.load("models/Character.gltf", (gltf) => {
+gltfLoader.load(import.meta.env.BASE_URL + "models/Character.gltf", (gltf) => {
   console.log("success");
   console.log(gltf);
   gltf.scene.scale.set(0.25, 0.25, 0.25);
@@ -29,7 +29,6 @@ gltfLoader.load("models/Character.gltf", (gltf) => {
       }
     }
   });
-
   scene.add(model);
 });
 // Функция для настройки всех текстур материала
