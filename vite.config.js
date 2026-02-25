@@ -25,5 +25,5 @@ export default defineConfig({
   },
 
   // 3. Поддержка 3D моделей
-  assetsInclude: ["**/*.gltf", "**/*.glb", "**/*.bin"],
+  assetsInclude: ["**/*.gltf", "**/*.glb", "**/*.bin", "**/*.png"],
 });
